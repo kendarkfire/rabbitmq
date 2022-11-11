@@ -1,0 +1,23 @@
+mvn exec:java -Dexec.mainClass="EmitLogDirect"   -Dexec.args="First info"
+
+
+mvn exec:java -Dexec.mainClass="ReceiveLogsDirect" -Dexec.args="info warning"
+
+mvn exec:java -Dexec.mainClass="ReceiveLogsDirect" -Dexec.args="warning"
+
+mvn exec:java -Dexec.mainClass="ReceiveLogsDirect" -Dexec.args="error"
+
+ dcredit=-1 difok=3 lcredit=-1 minlen=8 ocredit=-1 retry=5 ucredit=-1
+
+
+mvn exec:java -Dexec.mainClass="ReceiveLogsTopic"  -Dexec.args="#"
+
+mvn exec:java -Dexec.mainClass="ReceiveLogsTopic"  -Dexec.args="#"
+
+
+mvn exec:java -Dexec.mainClass="EmitLogTopic" -Dexec.args="kern.critical 'A critical kernel error'"
+
+
+mvn exec:java -Dexec.mainClass="RPCClient" 
+
+mvn exec:java -Dexec.mainClass="RPCServer" 
