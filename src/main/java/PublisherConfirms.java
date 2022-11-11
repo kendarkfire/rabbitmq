@@ -11,11 +11,12 @@ import java.util.function.BooleanSupplier;
 
 public class PublisherConfirms {
 
-    static final int MESSAGE_COUNT = 50_000;
+    static final int MESSAGE_COUNT = 5_000;
 
     static Connection createConnection() throws Exception {
         ConnectionFactory cf = new ConnectionFactory();
-        cf.setHost("localhost");
+        cf.setHost("10.8.8.108");
+        cf.setPort(5672);
         cf.setUsername("guest");
         cf.setPassword("guest");
         return cf.newConnection();

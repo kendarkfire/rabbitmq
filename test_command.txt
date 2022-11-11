@@ -20,4 +20,7 @@ mvn exec:java -Dexec.mainClass="EmitLogTopic" -Dexec.args="kern.critical 'A crit
 
 mvn exec:java -Dexec.mainClass="RPCClient" 
 
-mvn exec:java -Dexec.mainClass="RPCServer" 
+mvn exec:java -Dexec.mainClass="RPCServer"
+
+
+mvn exec:java -Dexec.mainClass="PublisherConfirms"  
